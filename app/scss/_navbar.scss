@@ -1,0 +1,25 @@
+#main-nav {
+    transition: all 1s;
+
+    a.navbar-brand {
+        color: #fff;
+        font-family: $aslope-text;
+        font-size: 2em;
+    }
+
+    .nav-item {
+        a {
+            color: #fff;
+            font-family: $items-text;
+
+            &:hover {
+                color: $azure-color;
+            }
+        }
+    }
+
+    &.scrolled {
+        transition: all 1s;
+        background-color: rgba(14, 216, 214, 0.5);
+    }
+}

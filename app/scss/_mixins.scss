@@ -1,0 +1,33 @@
+@mixin mask {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@mixin btn {
+    background-color: $azure-color;
+    border: none;
+    border: 1px solid $azure-color;
+    border-radius: 2px;
+    color: #fff;
+    font-family: $items-text;
+    padding: 13px 30px;
+}
+
+@mixin btn-hover {
+    background-color: #fff;
+    color: $azure-color;
+}
+
+@mixin fa{
+    color: #fff;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+
+@mixin placeholders{
+    font-size: 11px;
+    font-family: $items-text;
+    padding: 10px;
+}

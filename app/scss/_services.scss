@@ -1,0 +1,37 @@
+#services {
+
+    .services-content {
+
+            h2,
+            figcaption {
+                font-family: $items-text;
+                color: #000;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+        .services-icons {
+
+            .fa {
+                @include fa;
+                font-size: 3em;
+                background-color: $azure-color;
+                padding: 10px;
+                border: 1px solid $azure-color;
+                height: 70px;
+                width: 70px;
+                line-height: 40px;
+
+                &:before {
+                    font-size: 0.8em;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: $azure-color;
+                    transform: rotateZ(360deg);
+                }
+            }
+        }
+    }
+}

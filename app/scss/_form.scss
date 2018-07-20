@@ -1,0 +1,50 @@
+#contact {
+    background-image: url(../img/footer/world-map.jpg);
+    @include mask;
+    height: 120vh;
+    color: #fff;
+
+    h2 {
+        color: #fff;
+    }
+
+    .contact-content {
+
+        .left-side {
+            height: 150px;
+
+            input {
+                border-radius: 2px;
+                border: none;
+                height: 40px;
+            }
+        }
+
+        .right-side {
+
+            textarea {
+                height: 150px;
+                border-radius: 2px;
+                border: none;
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            @include placeholders;
+        }
+
+        .btn {
+
+            input[type='submit'] {
+                @include btn;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $azure-color;
+                    border: 1px solid $azure-color;
+                }
+            }
+        }
+    }
+}

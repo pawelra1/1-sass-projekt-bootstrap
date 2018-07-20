@@ -1,0 +1,78 @@
+#portfolio {
+    background-color: $portolio-bgc;
+
+    .portfolio-gallery {
+
+        .gallery-content {
+            margin: 10px;
+            background-clip: #fff;
+            padding: 0;
+
+            h3 {
+                margin-top: 20px;
+                font-family: $items-text;
+                font-size: 1em;
+                color: #000;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-family: $aslope-text;
+                text-align: center;
+            }
+
+            .photo1 {
+                background-image: url(../img/portfolio/box_of_cookies.jpg);
+            }
+            .photo2 {
+                background-image: url(../img/portfolio/chaotic_paint.jpg);
+            }
+            .photo3 {
+                background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+            }
+            .photo4 {
+                background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+            }
+            .photo5 {
+                background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+            }
+            .photo6 {
+                background-image: url(../img/portfolio/typing_on_laptop.jpg);
+            }
+        }
+
+        .photo {
+            background-position: center;
+            background-size: 150%;
+            height: 240px;
+            transition: all 1s;
+
+            &:hover {
+                background-size: 250%;
+            }
+
+            .photo-mask {
+                background-color: rgba(14, 216, 214, 0.5);
+                height: 100%;
+                box-sizing: border-box;
+                opacity: 0;
+                cursor: pointer;
+                transition: all 1s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                .photo-item {
+                    height: 100%;
+
+                    .fa {
+                        color: #fff;
+                        font-size: 3em;
+                    }
+                }
+            }
+        }
+    }
+}

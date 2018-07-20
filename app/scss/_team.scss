@@ -1,0 +1,47 @@
+#team {
+
+    .team-content {
+
+        .face-photo {
+
+            img {
+                border-radius: 50%;
+                height: 250px;
+                width: 250px;
+            }
+
+            .face-text {
+
+                h3 {
+                    font-family: $items-text;
+                    color: #000;
+                }
+
+                p {
+                    font-family: $text-font;
+                    color: $text-color;
+                }
+            }
+
+            .social-icons {
+
+                .fa {
+                    @include fa;
+                    background-color: $icons-color;
+                    font-size: 2em;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 20px;
+
+                    &:hover {
+                        background-color: $azure-color;
+                    }
+
+                    &:before {
+                        font-size: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+#footer {
+    font-family: $items-text;
+    color: $headers-color;
+    font-size: 10px;
+
+    .social-icons {
+
+        .fa {
+            @include fa;
+            background-color: $icons-color;
+            width: 30px;
+            height: 30px;
+            font-size: 2em;
+            padding-left: 7px;
+            line-height: 30px;
+
+            &:before {
+                font-size: 1em;
+            }
+            
+            &:hover{
+                background-color: $azure-color;
+            }
+        }
+    }
+}
